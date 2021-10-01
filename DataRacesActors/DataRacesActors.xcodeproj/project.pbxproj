@@ -11,9 +11,11 @@
 		845657AB2704E06E003F56C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845657AA2704E06E003F56C2 /* ContentView.swift */; };
 		845657AD2704E070003F56C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845657AC2704E070003F56C2 /* Assets.xcassets */; };
 		845657B02704E070003F56C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845657AF2704E070003F56C2 /* Preview Assets.xcassets */; };
-		845657BA2704E070003F56C2 /* DataRacesActorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845657B92704E070003F56C2 /* DataRacesActorsTests.swift */; };
-		845657D32704E0FD003F56C2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845657D22704E0FD003F56C2 /* ContentViewModel.swift */; };
-		845657D52704EC59003F56C2 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845657D42704EC59003F56C2 /* APIProvider.swift */; };
+		845657BA2704E070003F56C2 /* BankAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845657B92704E070003F56C2 /* BankAccountTests.swift */; };
+		84ADBB26270714E8006F5193 /* BankAccountUnsynchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ADBB25270714E8006F5193 /* BankAccountUnsynchronized.swift */; };
+		84ADBB2A27073E01006F5193 /* BankAccountSynchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ADBB2927073E01006F5193 /* BankAccountSynchronized.swift */; };
+		84ADBB2C27073E3C006F5193 /* BankAccountActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ADBB2B27073E3C006F5193 /* BankAccountActor.swift */; };
+		84ADBB2E27073F24006F5193 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ADBB2D27073F24006F5193 /* BankAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +35,11 @@
 		845657AC2704E070003F56C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845657AF2704E070003F56C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		845657B52704E070003F56C2 /* DataRacesActorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataRacesActorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		845657B92704E070003F56C2 /* DataRacesActorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRacesActorsTests.swift; sourceTree = "<group>"; };
-		845657D22704E0FD003F56C2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		845657D42704EC59003F56C2 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		845657B92704E070003F56C2 /* BankAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountTests.swift; sourceTree = "<group>"; };
+		84ADBB25270714E8006F5193 /* BankAccountUnsynchronized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountUnsynchronized.swift; sourceTree = "<group>"; };
+		84ADBB2927073E01006F5193 /* BankAccountSynchronized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountSynchronized.swift; sourceTree = "<group>"; };
+		84ADBB2B27073E3C006F5193 /* BankAccountActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountActor.swift; sourceTree = "<group>"; };
+		84ADBB2D27073F24006F5193 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,10 @@
 		845657A72704E06E003F56C2 /* DataRacesActors */ = {
 			isa = PBXGroup;
 			children = (
+				84ADBB28270727A0006F5193 /* Views */,
+				84ADBB2727071511006F5193 /* Resources */,
+				84ADBB24270714D7006F5193 /* Bank Accounts */,
 				845657A82704E06E003F56C2 /* DataRacesActorsApp.swift */,
-				845657AA2704E06E003F56C2 /* ContentView.swift */,
-				845657AC2704E070003F56C2 /* Assets.xcassets */,
-				845657AE2704E070003F56C2 /* Preview Content */,
-				845657D22704E0FD003F56C2 /* ContentViewModel.swift */,
-				845657D42704EC59003F56C2 /* APIProvider.swift */,
 			);
 			path = DataRacesActors;
 			sourceTree = "<group>";
@@ -98,9 +100,37 @@
 		845657B82704E070003F56C2 /* DataRacesActorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				845657B92704E070003F56C2 /* DataRacesActorsTests.swift */,
+				845657B92704E070003F56C2 /* BankAccountTests.swift */,
 			);
 			path = DataRacesActorsTests;
+			sourceTree = "<group>";
+		};
+		84ADBB24270714D7006F5193 /* Bank Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				84ADBB25270714E8006F5193 /* BankAccountUnsynchronized.swift */,
+				84ADBB2927073E01006F5193 /* BankAccountSynchronized.swift */,
+				84ADBB2B27073E3C006F5193 /* BankAccountActor.swift */,
+				84ADBB2D27073F24006F5193 /* BankAccount.swift */,
+			);
+			path = "Bank Accounts";
+			sourceTree = "<group>";
+		};
+		84ADBB2727071511006F5193 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				845657AC2704E070003F56C2 /* Assets.xcassets */,
+				845657AE2704E070003F56C2 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84ADBB28270727A0006F5193 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				845657AA2704E06E003F56C2 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				845657AB2704E06E003F56C2 /* ContentView.swift in Sources */,
-				845657D52704EC59003F56C2 /* APIProvider.swift in Sources */,
+				84ADBB2E27073F24006F5193 /* BankAccount.swift in Sources */,
+				84ADBB2A27073E01006F5193 /* BankAccountSynchronized.swift in Sources */,
+				84ADBB26270714E8006F5193 /* BankAccountUnsynchronized.swift in Sources */,
 				845657A92704E06E003F56C2 /* DataRacesActorsApp.swift in Sources */,
-				845657D32704E0FD003F56C2 /* ContentViewModel.swift in Sources */,
+				84ADBB2C27073E3C006F5193 /* BankAccountActor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845657BA2704E070003F56C2 /* DataRacesActorsTests.swift in Sources */,
+				845657BA2704E070003F56C2 /* BankAccountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DataRacesActors/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DataRacesActors/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4QMDKC8VLJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -382,7 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DataRacesActors/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DataRacesActors/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4QMDKC8VLJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
