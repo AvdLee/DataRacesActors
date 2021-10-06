@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84495264270C512800B7CF6C /* GlobalActors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84495263270C512800B7CF6C /* GlobalActors.swift */; };
 		845657A92704E06E003F56C2 /* DataRacesActorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845657A82704E06E003F56C2 /* DataRacesActorsApp.swift */; };
 		845657AB2704E06E003F56C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845657AA2704E06E003F56C2 /* ContentView.swift */; };
 		845657AD2704E070003F56C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845657AC2704E070003F56C2 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84495263270C512800B7CF6C /* GlobalActors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActors.swift; sourceTree = "<group>"; };
 		845657A52704E06E003F56C2 /* DataRacesActors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataRacesActors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845657A82704E06E003F56C2 /* DataRacesActorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRacesActorsApp.swift; sourceTree = "<group>"; };
 		845657AA2704E06E003F56C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		84ADBB2927073E01006F5193 /* BankAccountSynchronized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountSynchronized.swift; sourceTree = "<group>"; };
 		84ADBB2B27073E3C006F5193 /* BankAccountActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountActor.swift; sourceTree = "<group>"; };
 		84ADBB2D27073F24006F5193 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		84ADBB2F27075362006F5193 /* Chickens.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Chickens.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		84ADBB3027076A95006F5193 /* BankAccountDemo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BankAccountDemo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84495262270A29E300B7CF6C /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				84ADBB2F27075362006F5193 /* Chickens.playground */,
+				84ADBB3027076A95006F5193 /* BankAccountDemo.playground */,
+				84495263270C512800B7CF6C /* GlobalActors.swift */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
 		8456579C2704E06E003F56C2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,7 @@
 		845657A72704E06E003F56C2 /* DataRacesActors */ = {
 			isa = PBXGroup;
 			children = (
+				84495262270A29E300B7CF6C /* Playgrounds */,
 				84ADBB28270727A0006F5193 /* Views */,
 				84ADBB2727071511006F5193 /* Resources */,
 				84ADBB24270714D7006F5193 /* Bank Accounts */,
@@ -237,6 +252,7 @@
 				84ADBB2E27073F24006F5193 /* BankAccount.swift in Sources */,
 				84ADBB2A27073E01006F5193 /* BankAccountSynchronized.swift in Sources */,
 				84ADBB26270714E8006F5193 /* BankAccountUnsynchronized.swift in Sources */,
+				84495264270C512800B7CF6C /* GlobalActors.swift in Sources */,
 				845657A92704E06E003F56C2 /* DataRacesActorsApp.swift in Sources */,
 				84ADBB2C27073E3C006F5193 /* BankAccountActor.swift in Sources */,
 			);
